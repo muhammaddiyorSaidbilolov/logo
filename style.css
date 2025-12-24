@@ -1,0 +1,547 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color:#ff2e63;
+    --text-color:#343434;
+    --text-color2:#252a34;
+
+    --raj-ff:"Rajdhani", sans-serif;
+    --open-ff:"Open Sans", sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #ddd;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.Wrapper{
+    max-width: 1280px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    min-height: 100dvh;
+
+}
+
+/* header start */
+header{
+    width: 100%;
+    padding: 20px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.header-logo{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5%;
+    color: #252a34;
+    text-transform: uppercase;
+     font-family: "Rajdhani", sans-serif;
+
+}
+
+.header-logo > span{
+    color: #FF2E63;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav > ul a{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #252a34;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav > ul a:hover{
+    color: #FF2E63;
+}
+
+.header-btns{
+    display: flex;
+    gap: 10px;
+}
+
+.header-btns > button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    background-color: #FF2E63;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-btns > button:first-child{
+    color: #FF2E63;
+    background-color: #fff;
+}
+
+
+.header-btns > button:hover{
+    color: #FF2E63;
+    background-color: #fff;
+}
+
+/* header end */
+
+/* hero section start */
+.hero{
+    padding: 0 0 0 55px;
+    width: 100%;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+
+.hero-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+
+.hero-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #343434;
+}
+
+
+.hero-title > span{
+   color: #ff2e63;
+}
+
+
+.hero-info > button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #346cd9;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.hero-info > button:hover{
+    background-color: #1f50b4;
+}
+
+
+.hero-info > button:active{
+    background-color: #346cd9;
+}
+
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 70% center;
+    background-size: auto;
+    background-image: url("./img/hero-bg.png.png");
+}
+
+/* hero section end */
+
+
+/* competition section start  */
+.competition{
+    width: 100%;
+    padding: 50px 55px;
+}
+
+.competition-title{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #343434;
+}
+
+.competition-container{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+.car{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #e5e5e5;
+    position: relative;
+}
+
+
+.car-img{
+    width: 100%;
+    aspect-ratio: 8/5;
+    overflow: hidden;
+}
+
+
+.car-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.car:hover > .car-img > img{
+    transform: scale(1.1);
+}
+
+
+.car-info{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.car-name{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #252a34;
+
+}
+
+
+.car-price{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #FF2E63;
+    margin-top: 5px;
+}
+
+
+.car-price > del{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Rajdhani", sans-serif;
+    color: #999999;
+}
+
+
+.car-ticket{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #343434;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.car-link{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 0 10px 0;
+    background-color: #346cd9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+
+.car-link:hover{
+    color: #1d428b;
+}
+/* competition section end  */
+
+
+/* howworks start */
+
+.howWorks {
+    width: 100%;
+    padding: 100px 55px;
+}
+
+.howWorks-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    color: #343434;
+    text-align: center;
+}
+
+.howWorks-container {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.howWorks-icon {
+    margin-top: 15px;
+}
+
+.howWorks-content {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.howWorks-content > img {
+    width: 64px;
+    height: 64px;
+}
+
+.howWorks-content > p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: "Open Sans" sans-serif;
+    color: #343434;
+}
+.howWorks-icon > img {
+    width: 32px;
+    height: 20px;
+}
+/* howworks end  */
+
+/* testimonial section start */
+.testimonial{
+    width: 100%;
+    /* overflow:hidden; */
+}
+
+
+.testimonial-wrapper{
+    width: 100%;
+    /* overflow-x: scroll; */
+}
+
+
+.testimonial-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.testimonial-info{
+    width: 100%;
+    padding: 78px 120px;
+    background-color: rgba(52,108,217,0.12);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-info > p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family:var(--open-ff);
+    color: var(--text-color);
+    text-align: center;
+}
+
+
+.testimonial-info > h4{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: var(--open-ff);
+    color: var(--text-color);
+    text-align: center;
+
+}
+
+
+.testimonial-info > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.testimonial-info > ul > li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,46,99,0.33);
+}
+
+
+.testimonial-content.active .testimonial-info > ul > li:first-child {
+    background-color: var(--main-color);
+}
+
+
+.testimonial-img{
+    width: 100%;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+}
+
+
+.testimonial-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* testimonial section end */
+
+/* winners start */
+
+.winners {
+    padding: 100px 55px;
+}
+
+.winners-contanier {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.winner {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.winner-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.winner-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    border: 10px 10px 0 0;
+}
+
+.winner-img:hover > img {
+    transform: scale(1.1);
+}
+
+.winner-info {
+    width: 100%;
+    padding: 20px;
+}
+
+.winner-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    font-family: var(--raj-ff);
+    color: var(--text-color2);
+}
+
+.winner-date {
+    margin-top: 7px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    font-family: var(--open-ff);
+    color: var(--text-color);
+}
+/* winner end */
+
+/* footer start */
+footer {
+    padding: 16px 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #346cd9;
+
+}
+
+.footer-logo{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: var(--raj-ff);
+
+}
+
+.footer-logo > img {
+    color: #ffffff;
+}
+
+/* footer end */
+
